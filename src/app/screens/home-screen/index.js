@@ -5,9 +5,8 @@ import {firebaseConfig} from '../../config/firebase';
 import styles from './styles';
 
 export const HomeScreen = () => {
-  const [food, setFood] = React.useState('');
-  const [category, setCategory] = React.useState('');
   const [data, setData] = React.useState('');
+  const [categoryKeys, setCategoryKeys] = React.useState([]);
 
   const getFirebaseData = () => {
     const reference = firebase
@@ -17,6 +16,7 @@ export const HomeScreen = () => {
 
     reference.on('value', snapshot => {
       setData(snapshot.val());
+      setCategoryKeys(Object.keys(snapshot.val()));
     });
   };
 
@@ -26,7 +26,8 @@ export const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text>{JSON.stringify(data.kebab)}</Text>
+      <Text>{JSON.stringify(data[categoryKeys[0]])}</Text>
+      <Text>{JSON.stringify(categoryKeys)}</Text>
     </View>
   );
 };
