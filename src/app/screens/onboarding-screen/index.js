@@ -42,10 +42,6 @@ export const OnBoardingScreen = ({navigation}) => {
     }
   };
 
-  useEffect(() => {
-    setOnBoarding();
-  }, []);
-
   const renderItem = () => (
     <Animated.ScrollView
       horizontal
@@ -69,6 +65,7 @@ export const OnBoardingScreen = ({navigation}) => {
             <View style={styles.textButtonContainer}>
               <Text
                 onPress={() => {
+                  setOnBoarding();
                   navigation.navigate('home');
                 }}>
                 Tamamla
