@@ -1,6 +1,26 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+
+# Random Food 🍲
+
+In this simple application developed with React Native, you can use the data from Firebase to assist you in making food choices.
+
+Currently, there are 8 available categories: kebab, dessert, soup, main course, olive oil dishes, salads, snacks, and other categories.
+
+## Technologies 👩🏻‍💻
+
+* Firebase
+* Firebase Realtime Database
+
+
+## Soon, the following features will be added 🥳🤩 
+
+* Firebase Authentication for user login.
+* Feedback when a meal selection is made and confirmed.
+* Feedback when no meal is selected.
+* User interface and backend infrastructure for receiving user suggestions.
+
+
+# Getting Started 🏁
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
