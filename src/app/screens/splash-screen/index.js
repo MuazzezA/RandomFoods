@@ -29,11 +29,12 @@ export const SplashScreen = ({onboarding, navigation}) => {
   useEffect(() => {
     animate();
     setTimeout(() => {
-      {
-        onboarding
-          ? navigation.navigate('home')
-          : navigation.navigate('onbording');
-      }
+      // {
+      //   onboarding
+      //     ? navigation.navigate('home')
+      //     : navigation.navigate('onbording');
+      // }
+      navigation.navigate('onbording');
     }, 2000);
   }, []);
 

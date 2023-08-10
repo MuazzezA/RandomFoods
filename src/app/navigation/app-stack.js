@@ -7,12 +7,13 @@ import {HomeScreen, OnBoardingScreen, SplashScreen} from '../screens';
 const Stack = createNativeStackNavigator();
 
 const isOnBoarding = async () => {
-  try {
-    const onBoarding = await AsyncStorage.getItem('@completeOnBoarding');
-    return onBoarding === 'true' ? true : false;
-  } catch (error) {
-    return false;
-  }
+  // try {
+  //   const onBoarding = await AsyncStorage.getItem('@completeOnBoarding');
+  //   return onBoarding === 'true' ? true : false;
+  // } catch (error) {
+  //   return false;
+  // }
+  return false;
 };
 
 const AppStack = () => {
@@ -28,22 +29,22 @@ const AppStack = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        {isOnBoarding ? (
+        {/* {isOnBoarding ? (
           <>
             <Stack.Screen name="splash">
               {props => <SplashScreen {...props} onboarding={isOnBoarding} />}
             </Stack.Screen>
             <Stack.Screen name="home" component={HomeScreen} />
           </>
-        ) : (
-          <>
-            <Stack.Screen name="splash">
-              {props => <SplashScreen {...props} onboarding={isOnBoarding} />}
-            </Stack.Screen>
-            <Stack.Screen name="onbording" component={OnBoardingScreen} />
-            <Stack.Screen name="home" component={HomeScreen} />
-          </>
-        )}
+        ) : ( */}
+        <>
+          <Stack.Screen name="splash">
+            {props => <SplashScreen {...props} onboarding={isOnBoarding} />}
+          </Stack.Screen>
+          <Stack.Screen name="onbording" component={OnBoardingScreen} />
+          <Stack.Screen name="home" component={HomeScreen} />
+        </>
+        {/* )} */}
       </Stack.Navigator>
     </NavigationContainer>
   );
