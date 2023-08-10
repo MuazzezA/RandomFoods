@@ -3,7 +3,8 @@ import {View, Animated, Easing} from 'react-native';
 import SplashSvg from '../../../assets/svg/splash-2.svg';
 import styles from './styles';
 
-export const SplashScreen = ({onboarding, navigation}) => {
+export const SplashScreen = ({isComplate, navigation}) => {
+  console.log('splash:isComplate : ', isComplate);
   const size = useRef(new Animated.Value(100)).current;
   const opacity = useRef(new Animated.Value(0)).current;
 
@@ -29,12 +30,11 @@ export const SplashScreen = ({onboarding, navigation}) => {
   useEffect(() => {
     animate();
     setTimeout(() => {
-      // {
-      //   onboarding
-      //     ? navigation.navigate('home')
-      //     : navigation.navigate('onbording');
-      // }
-      navigation.navigate('onbording');
+      if (isComplate === true) {
+        navigation.navigate('home');
+      } else {
+        navigation.navigate('onbording');
+      }
     }, 2000);
   }, []);
 

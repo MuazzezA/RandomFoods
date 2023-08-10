@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {View, Animated} from 'react-native';
 import {Text} from '../../components';
@@ -36,7 +36,7 @@ export const OnBoardingScreen = ({navigation}) => {
 
   const setOnBoarding = async () => {
     try {
-      await AsyncStorage.setItem('@completeOnBoarding', 'true');
+      await AsyncStorage.setItem('@completeOnBoarding', 'complate');
     } catch (error) {
       console.log(error);
     }
@@ -65,8 +65,9 @@ export const OnBoardingScreen = ({navigation}) => {
             <View style={styles.textButtonContainer}>
               <Text
                 onPress={() => {
-                  setOnBoarding();
-                  navigation.navigate('home');
+                  setOnBoarding().then(() => {
+                    navigation.navigate('home');
+                  });
                 }}>
                 Tamamla
               </Text>
