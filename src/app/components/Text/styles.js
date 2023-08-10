@@ -8,4 +8,12 @@ export default StyleSheet.create({
     color: colors.black,
     fontFamily: 'Manrope',
   },
+  buttonText: {
+    fontSize: 14,
+    fontWeight: '600',
+    letterSpacing: 0.5,
+    color: colors.secondaryDark,
+    fontFamily: 'Manrope',
+    textDecorationLine: 'underline',
+  },
 });
