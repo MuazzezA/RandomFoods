@@ -21,10 +21,10 @@ Currently, there are 8 available categories: kebab, dessert, soup, main course, 
     <td>
       <b>Screenshots</b>
       <br>
-        <img width="200" alt="splash" src="https://github.com/MuazzezA/RandomFoods/assets/64336826/2e2747a2-c0d1-469f-bdc9-e0978bcd2bb9">
-        <img width="200" alt="onboarding-1" src="https://github.com/MuazzezA/RandomFoods/assets/64336826/93390f9f-b47d-445d-af95-0ad9df8ccead">
-        <img width="200" alt="onboarding-2" src="https://github.com/MuazzezA/RandomFoods/assets/64336826/04a0f748-633a-4f34-85c4-272c3f3c3300">
-        <img width="200" alt="onboarding-3" src="https://github.com/MuazzezA/RandomFoods/assets/64336826/d615ea65-8125-4189-87eb-0936bb5d5a32">
+        <img width="180" alt="splash" src="https://github.com/MuazzezA/RandomFoods/assets/64336826/2e2747a2-c0d1-469f-bdc9-e0978bcd2bb9">
+        <img width="180" alt="onboarding-1" src="https://github.com/MuazzezA/RandomFoods/assets/64336826/93390f9f-b47d-445d-af95-0ad9df8ccead">
+        <img width="180" alt="onboarding-2" src="https://github.com/MuazzezA/RandomFoods/assets/64336826/04a0f748-633a-4f34-85c4-272c3f3c3300">
+        <img width="180" alt="onboarding-3" src="https://github.com/MuazzezA/RandomFoods/assets/64336826/d615ea65-8125-4189-87eb-0936bb5d5a32">
     </td>
   </tr>
 </table>
